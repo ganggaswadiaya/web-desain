@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../Poppins/Poppins-LightItalic.ttf);
+}
+
+body {
+  max-width: 1260px;
+  background-image: url("../image/gambar1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1260px 800px;
+}
+
+.home {
+  height: auto;
+}
+
+nav {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+h4 {
+  height: auto;
+  width: 500px;
+  margin-top: 1rem;
+  margin-left: 90px;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald";
+  color: white;
+  font-size: 30px;
+  align-items: center;
+}
+
+a {
+  color: white;
+  font-family: "Poppins";
+}
+
+.link ul li a {
+  text-decoration: none;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.link ul li a:hover {
+  color: silver;
+}
+
+.link ul {
+  list-style: none;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conten {
+  height: 460px;
+  font-family: "Poppins";
+  margin-left: 90px;
+  font-size: 30px;
+  margin-top: 200px;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+}
+
+.tentang {
+  background-color: white;
+}
+
+.deskripsi {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+h5 {
+  margin-left: 90px;
+  font-size: 40px;
+  font-family: "Poppins";
+  padding-top: 2rem;
+  margin-top: 3rem;
+  color: black;
+}
+.deskripsi p {
+  margin-left: 90px;
+  font-family: "Poppins";
+  font-size: 20px;
+  width: 50%;
+}
+
+.deskripsi img {
+  width: 400;
+  height: 350px;
+}
+
+.tutorial h5 {
+  color: white;
+  padding-bottom: 1rem;
+  text-shadow: 2px 2px 1px black;
+}
+
+.tutorial {
+  background-color: #4f20d6;
+  color: white;
+  font-family: "Poppins";
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  height: auto;
+}
+
+.konten {
+  display: flex;
+}
+
+.border {
+  width: 400px;
+  margin-left: 90px;
+  margin-right: 50px;
+  background-color: #3a0cbd;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+}
+
+.tutorial h6 {
+  font-size: 25px;
+  text-shadow: 2px 2px 1px black;
+}
+
+.border a {
+  text-decoration: none;
+  background-color: #38e535;
+  color: black;
+  padding-top: 30px;
+  padding: 3px 3px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+.border a:hover {
+  background-color: #028500;
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: #c9cbde;
+  justify-content: space-between;
+  height: 180px;
+  align-items: center;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Poppins";
+  padding-top: 2rem;
+  margin-right: 90px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.logo p {
+  font-family: "Oswald";
+  font-size: 30px;
+  margin-left: 90px;
+  color: black;
+  padding-top: 3rem;
+  width: 50%;
+}
+
+span {
+  margin-left: 90px;
+  font-family: "Poppins";
+}
+
+.alamat {
+  margin-right: 90px;
+  font-family: "Poppins";
+}
+
+.alamat a {
+  font-family: "Poppins";
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    background-size: 560px;
+    background-repeat: no-repeat;
+    background-color: none;
+  }
+  nav {
+    width: auto;
+    margin-right: 10px;
+    background-color: #3f4bcf;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 4px black;
+    position: relative;
+  }
+  h4 {
+    width: 100px;
+    font-size: 20px;
+    margin-left: 30px;
+    color: white;
+    font-family: "Oswald";
+    text-shadow: 1px 1px 1px black;
+  }
+  ul {
+    display: none;
+  }
+  .conten {
+    margin-left: 50px;
+    font-size: 20px;
+    height: 100px;
+    margin: 70px;
+  }
+  .tentang {
+    margin-top: 20px;
+  }
+  .tentang h5 {
+    padding-top: 3rem;
+    font-size: 25px;
+    margin-left: 60px;
+  }
+  .deskripsi img {
+    display: none;
+  }
+  .deskripsi p {
+    font-size: 15px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
+  .tutorial {
+    margin-top: 1rem;
+  }
+  .tutorial h5 {
+    padding-top: 1rem;
+    font-size: 25px;
+    margin-left: 60px;
+  }
+  .border {
+    padding-top: 1rem;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: auto;
+    margin-right: 60px;
+    box-shadow: 0px 0px 4px black;
+  }
+  .konten {
+    flex-direction: column;
+  }
+  .tutorial h6 {
+    font-size: 20px;
+  }
+  .tutorial p {
+    font-size: 15px;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .logo span {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .contact p {
+    font-family: "Oswald";
+    margin-left: 20px;
+  }
+  .contact a {
+    margin-left: 20px;
+  }
+  .contact i {
+    margin-left: 20px;
+  }
+  .alamat {
+    margin-left: 20px;
+    margin-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
