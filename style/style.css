@@ -1,6 +1,10 @@
+:root {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "Poppins";
@@ -50,10 +54,32 @@ a {
   text-decoration: none;
   justify-content: space-between;
   list-style: none;
+  transition: 1s;
 }
 
+.toggle-menu {
+  position: absolute;
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 30px;
+  height: 21px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle-menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
 .link ul li a:hover {
-  color: silver;
+  color: black;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
 }
 
 .link ul {
@@ -75,6 +101,16 @@ a {
 
 .tentang {
   background-color: white;
+}
+
+.garis {
+  border-left: 1px black solid;
+  width: 0px;
+  height: 100px;
+}
+
+.tentang h5 {
+  padding-bottom: 1rem;
 }
 
 .deskripsi {
@@ -104,14 +140,15 @@ h5 {
 }
 
 .tutorial h5 {
-  color: white;
-  padding-bottom: 1rem;
-  text-shadow: 2px 2px 1px black;
+  margin-top: 20px;
+  padding-top: 1rem;
+  color: black;
+  padding-bottom: 2rem;
 }
 
 .tutorial {
-  background-color: #4f20d6;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Poppins";
   padding-top: 1rem;
   padding-bottom: 6rem;
@@ -123,38 +160,31 @@ h5 {
 }
 
 .border {
-  width: 400px;
-  margin-left: 90px;
-  margin-right: 50px;
-  background-color: #3a0cbd;
+  width: 300px;
+  margin-left: 150px;
+  margin-right: 100px;
+  background-color: #ededed;
   border-radius: 5px;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
+  transition: 1s;
 }
 
 .tutorial h6 {
   font-size: 25px;
-  text-shadow: 2px 2px 1px black;
+  /* text-shadow: 0px 0px 3px ; */
 }
-
+.border:hover {
+  transform: scale(1.1);
+}
 .border a {
   text-decoration: none;
-  background-color: #38e535;
   color: black;
-  padding-top: 30px;
-  padding: 3px 3px;
-  border-radius: 5px;
-  font-size: 15px;
   font-family: "Poppins";
-}
-
-.border a:hover {
-  background-color: #028500;
-  color: white;
 }
 
 footer {
   display: flex;
-  background-color: #c9cbde;
+  background-color: #c4c5d2;
   justify-content: space-between;
   height: 180px;
   align-items: center;
@@ -204,32 +234,43 @@ span {
 
 @media screen and (max-width: 560px) {
   body {
-    background-size: 560px;
-    background-repeat: no-repeat;
-    background-color: none;
+    background-color: #f5f5f5;
+    background-image: none;
   }
+  .toggle-menu {
+    display: none;
+    margin-left: 25px;
+  }
+
   nav {
-    width: auto;
+    position: fixed;
     margin-right: 10px;
-    background-color: #3f4bcf;
+    background-color: #ededed;
     margin-left: 10px;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 0px 0px 4px black;
     position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 4px black;
   }
   h4 {
-    width: 100px;
     font-size: 20px;
     margin-left: 30px;
-    color: white;
+    color: black;
     font-family: "Oswald";
-    text-shadow: 1px 1px 1px black;
   }
+
   ul {
     display: none;
+    flex-direction: column;
+    transition: 1s;
   }
   .conten {
+    text-align: center;
+    color: black;
+    text-shadow: none;
     margin-left: 50px;
     font-size: 20px;
     height: 100px;
@@ -239,6 +280,7 @@ span {
     margin-top: 20px;
   }
   .tentang h5 {
+    text-align: center;
     padding-top: 3rem;
     font-size: 25px;
     margin-left: 60px;
@@ -255,9 +297,11 @@ span {
     padding-top: 1rem;
   }
   .tutorial {
+    background-color: #f5f5f5;
     margin-top: 1rem;
   }
   .tutorial h5 {
+    text-align: center;
     padding-top: 1rem;
     font-size: 25px;
     margin-left: 60px;
@@ -265,10 +309,10 @@ span {
   .border {
     padding-top: 1rem;
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: auto;
     margin-right: 60px;
-    box-shadow: 0px 0px 4px black;
+    box-shadow: 1px 1px 4px black;
   }
   .konten {
     flex-direction: column;
