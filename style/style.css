@@ -10,10 +10,15 @@
   font-family: "Poppins";
   src: url(../Poppins/Poppins-LightItalic.ttf);
 }
+@font-face {
+  font-family: "Oswald";
+  src: url(../Oswald/Oswald-VariableFont_wght.ttf);
+}
 
 body {
+  background-color: #f5f5f5;
   max-width: 1260px;
-  background-image: url("../image/gambar1.jpg");
+  /* background-image: url("../image/gambar1.jpg"); */
   background-repeat: no-repeat;
   background-size: 1260px 800px;
 }
@@ -23,9 +28,12 @@ body {
 }
 
 nav {
+  position: fixed;
   display: flex;
-  width: auto;
+  width: 1260px;
   align-items: center;
+  background-color: #ebebed;
+  box-shadow: 0px 0px 4px black;
 }
 
 ul {
@@ -34,19 +42,19 @@ ul {
 
 h4 {
   height: auto;
-  width: 500px;
+  /* width: 500px; */
   margin-top: 1rem;
   margin-left: 90px;
   margin-right: 3rem;
   margin-bottom: 1rem;
   font-family: "Oswald";
-  color: white;
+  color: black;
   font-size: 30px;
   align-items: center;
 }
 
 a {
-  color: white;
+  color: black;
   font-family: "Poppins";
 }
 
@@ -54,7 +62,7 @@ a {
   text-decoration: none;
   justify-content: space-between;
   list-style: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .toggle-menu {
@@ -77,9 +85,8 @@ a {
 }
 .link ul li a:hover {
   color: black;
-  background-color: aquamarine;
-  border-radius: 10px;
-  padding: 5px 5px 5px 5px;
+  background-color: #dedee3;
+  width: 100%;
 }
 
 .link ul {
@@ -90,13 +97,13 @@ a {
 }
 
 .conten {
-  height: 460px;
+  height: 260px;
   font-family: "Poppins";
   margin-left: 90px;
   font-size: 30px;
   margin-top: 200px;
-  color: white;
-  text-shadow: 2px 2px 1px black;
+  color: black;
+  text-shadow: 1px 1px 4px #c4c5d2;
 }
 
 .tentang {
@@ -163,6 +170,7 @@ h5 {
   width: 300px;
   margin-left: 150px;
   margin-right: 100px;
+  box-shadow: 1px 1px 4px black;
   background-color: #ededed;
   border-radius: 5px;
   padding: 1rem 1rem;
@@ -243,6 +251,7 @@ span {
   }
 
   nav {
+    width: auto;
     position: fixed;
     margin-right: 10px;
     background-color: #ededed;
@@ -260,6 +269,7 @@ span {
     margin-left: 30px;
     color: black;
     font-family: "Oswald";
+    width: auto;
   }
 
   ul {
@@ -280,10 +290,9 @@ span {
     margin-top: 20px;
   }
   .tentang h5 {
-    text-align: center;
+    margin-left: 200px;
     padding-top: 3rem;
     font-size: 25px;
-    margin-left: 60px;
   }
   .deskripsi img {
     display: none;
@@ -301,10 +310,9 @@ span {
     margin-top: 1rem;
   }
   .tutorial h5 {
-    text-align: center;
     padding-top: 1rem;
     font-size: 25px;
-    margin-left: 60px;
+    margin-left: 200px;
   }
   .border {
     padding-top: 1rem;
