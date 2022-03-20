@@ -265,7 +265,6 @@ span {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 10px;
     box-shadow: 1px 1px 4px black;
   }
   h4 {
@@ -317,6 +316,9 @@ span {
     font-size: 15px;
     width: auto;
     padding-left: 3rem;
+    width: auto;
+    margin-right: 30px;
+    margin-left: 20px;
     padding-bottom: 3rem;
     padding-top: 1rem;
   }
@@ -327,6 +329,13 @@ span {
     margin: 0;
     text-align: center;
     font-size: 25px;
+  }
+
+  .border a {
+    margin-top: 30px;
+  }
+  .border a:hover {
+    color: blue;
   }
   .border {
     padding-top: 1rem;
