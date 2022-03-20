@@ -16,7 +16,8 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: white;
+  /* background-color: #f5f5f5; */
   max-width: 1260px;
   /* background-image: url("../image/gambar1.jpg"); */
   background-repeat: no-repeat;
@@ -28,12 +29,11 @@ body {
 }
 
 nav {
-  position: fixed;
   display: flex;
   width: 1260px;
   align-items: center;
-  background-color: #ebebed;
-  box-shadow: 0px 0px 4px black;
+  background-color: #ededed;
+  box-shadow: 0px 0px 2px black;
 }
 
 ul {
@@ -42,7 +42,7 @@ ul {
 
 h4 {
   height: auto;
-  /* width: 500px; */
+  width: 500px;
   margin-top: 1rem;
   margin-left: 90px;
   margin-right: 3rem;
@@ -95,13 +95,17 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
+.conten img {
+  height: 300px;
+  width: 300px;
+}
 .conten {
-  height: 260px;
+  text-align: center;
+  flex-direction: column;
   font-family: "Poppins";
-  margin-left: 90px;
   font-size: 30px;
-  margin-top: 200px;
+  margin-top: 30px;
+  padding-bottom: 30px;
   color: black;
   text-shadow: 1px 1px 4px #c4c5d2;
 }
@@ -242,7 +246,8 @@ span {
 
 @media screen and (max-width: 560px) {
   body {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-color: white;
     background-image: none;
   }
   .toggle-menu {
@@ -252,9 +257,8 @@ span {
 
   nav {
     width: auto;
-    position: fixed;
     margin-right: 10px;
-    background-color: #ededed;
+    background-color: white;
     margin-left: 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -265,6 +269,7 @@ span {
     box-shadow: 1px 1px 4px black;
   }
   h4 {
+    width: 0;
     font-size: 20px;
     margin-left: 30px;
     color: black;
@@ -277,42 +282,51 @@ span {
     flex-direction: column;
     transition: 1s;
   }
+  .conten img {
+    height: 150px;
+    width: 150px;
+  }
   .conten {
     text-align: center;
     color: black;
     text-shadow: none;
-    margin-left: 50px;
     font-size: 20px;
-    height: 100px;
-    margin: 70px;
+    height: auto;
   }
   .tentang {
     margin-top: 20px;
+    /* background-color: #f5f5f5; */
   }
   .tentang h5 {
-    margin-left: 200px;
+    margin-left: 0;
+    text-align: center;
     padding-top: 3rem;
     font-size: 25px;
   }
+  .deskripsi {
+    flex-direction: column;
+  }
   .deskripsi img {
-    display: none;
+    width: 300px;
+    height: 230px;
+    padding-bottom: 2rem;
   }
   .deskripsi p {
+    margin-left: 0;
+    /* background-color: #f5f5f5; */
     font-size: 15px;
     width: auto;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 3rem;
     padding-bottom: 3rem;
     padding-top: 1rem;
   }
   .tutorial {
-    background-color: #f5f5f5;
-    margin-top: 1rem;
+    background-color: white;
   }
   .tutorial h5 {
-    padding-top: 1rem;
+    margin: 0;
+    text-align: center;
     font-size: 25px;
-    margin-left: 200px;
   }
   .border {
     padding-top: 1rem;
