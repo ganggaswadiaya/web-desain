@@ -294,7 +294,7 @@ span {
   }
   .tentang {
     margin-top: 20px;
-    /* background-color: #f5f5f5; */
+    background-color: #f5f5f5;
   }
   .tentang h5 {
     margin-left: 0;
@@ -304,21 +304,22 @@ span {
   }
   .deskripsi {
     flex-direction: column;
+    background-color: #f5f5f5;
   }
   .deskripsi img {
     width: 300px;
     height: 230px;
+    border-radius: 30%;
     padding-bottom: 2rem;
   }
   .deskripsi p {
     margin-left: 0;
-    /* background-color: #f5f5f5; */
     font-size: 15px;
     width: auto;
     padding-left: 3rem;
     width: auto;
-    margin-right: 30px;
-    margin-left: 20px;
+    text-align: center;
+    margin-right: 40px;
     padding-bottom: 3rem;
     padding-top: 1rem;
   }
@@ -332,7 +333,10 @@ span {
   }
 
   .border a {
-    margin-top: 30px;
+    margin-top: 1rem;
+    background-color: rgb(72, 177, 72);
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
   }
   .border a:hover {
     color: blue;
