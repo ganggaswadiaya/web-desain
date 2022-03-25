@@ -120,6 +120,9 @@ a {
 }
 .tentang {
   background-color: #ededed;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tentang h5 {
@@ -133,15 +136,16 @@ a {
 }
 
 .tentang hr {
+  margin-top: -18px;
   margin-left: 90px;
   width: 300px;
   height: 3px;
   background-color: black;
 }
-.tutorial hr {
+#tutorial hr {
   margin-left: 90px;
   width: 200px;
-  margin-top: -20px;
+  margin-top: -10px;
   margin-bottom: 50px;
   height: 3px;
   background-color: black;
@@ -173,14 +177,16 @@ h5 {
   height: 350px;
 }
 
-.tutorial h5 {
-  margin-top: 20px;
-  padding-top: 1rem;
+.judul-tutorial h5 {
+  margin-left: 90px;
+  font-size: 40px;
+  font-family: "Poppins";
+  padding-top: 2rem;
+  margin-top: 3rem;
   color: black;
-  padding-bottom: 2rem;
 }
 
-.tutorial {
+#tutorial {
   background-color: white;
   color: black;
   font-family: "Poppins";
@@ -204,7 +210,7 @@ h5 {
   transition: 1s;
 }
 
-.tutorial h6 {
+#tutorial h6 {
   font-size: 25px;
   /* text-shadow: 0px 0px 3px ; */
 }
@@ -330,14 +336,31 @@ span {
     font-size: 20px;
     height: auto;
   }
-  .tutorial hr {
-    margin-top: -15px;
-    margin-left: 200px;
-    width: 150px;
+  .judul-tutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tutorial hr {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+  }
+  .tentang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .tentang hr {
-    margin-left: 150px;
-    width: 250px;
+    margin: 0;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
   }
   .tentang {
     margin-top: 20px;
@@ -348,11 +371,6 @@ span {
     text-align: center;
     padding-top: 3rem;
     font-size: 25px;
-  }
-  .tentang .garis {
-    width: 100px;
-    height: 3px;
-    background-color: black;
   }
   .deskripsi {
     flex-direction: column;
@@ -378,7 +396,7 @@ span {
   .tutorial {
     background-color: white;
   }
-  .tutorial h5 {
+  #tutorial h5 {
     margin: 0;
     text-align: center;
     font-size: 25px;
@@ -444,14 +462,15 @@ span {
 }
 
 @media screen and (max-width: 430px) {
-  .tutorial hr {
+  .judul-tutorial hr {
     margin: 0;
-    margin-left: 150px;
+    left: 0;
+    margin-left: 180px;
     margin-top: -20px;
     margin-bottom: 30px;
   }
   .tentang hr {
-    margin: 0;
+    left: 0;
     margin-left: 95px;
     margin-top: -5px;
   }
