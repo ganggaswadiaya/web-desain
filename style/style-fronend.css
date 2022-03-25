@@ -15,6 +15,11 @@
   src: url(../Oswald/Oswald-VariableFont_wght.ttf);
 }
 
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .home {
   height: auto;
 }
@@ -58,7 +63,7 @@ h5 {
   font-size: 40px;
   font-family: "Oswald";
 }
-.garis {
+hr {
   margin-left: 80px;
   width: 200px;
   height: 3px;
@@ -98,7 +103,7 @@ h5 {
   padding: 20px 20px 20px 20px;
   background-color: #ededed;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 30%;
   margin: 30px 30px 30px 30px;
 }
@@ -191,5 +196,36 @@ img {
   }
   .bagian3 img {
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  nav {
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 10px;
+    position: fixed;
+  }
+  h4 {
+    margin-right: 160px;
+    left: 0;
+  }
+  a i {
+    margin-top: 7px;
+  }
+  hr {
+    width: 245px;
+  }
+  .bagian1 {
+    flex-direction: none;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .bagian3 img {
+    width: 100px;
+    margin-left: 55px;
   }
 }

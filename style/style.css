@@ -6,17 +6,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* @font-face {
-  font-family: "Poppins";
-  src: url(../Poppins/Poppins-.ttf);
-}
 @font-face {
   font-family: "Oswald";
   src: url(../Oswald/Oswald-VariableFont_wght.ttf);
-} */
+}
+body {
+  max-width: 1280px;
+  margin: auto;
+}
 
-.home {
-  height: auto;
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 nav {
@@ -27,7 +32,8 @@ nav {
   width: 1280px;
   align-items: center;
   background-color: #ededed;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 1px 4px black;
+  z-index: 3;
 }
 
 ul {
@@ -106,8 +112,12 @@ a {
   padding-bottom: 30px;
   color: black;
   text-shadow: 1px 1px 4px #c4c5d2;
+  z-index: 5;
 }
 
+#tentang {
+  scroll-margin-top: 55px;
+}
 .tentang {
   background-color: #ededed;
 }
@@ -120,6 +130,21 @@ a {
   display: flex;
   align-items: center;
   background-color: #ededed;
+}
+
+.tentang hr {
+  margin-left: 90px;
+  width: 300px;
+  height: 3px;
+  background-color: black;
+}
+.tutorial hr {
+  margin-left: 90px;
+  width: 200px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  height: 3px;
+  background-color: black;
 }
 
 h5 {
@@ -171,7 +196,7 @@ h5 {
 .border {
   width: 400px;
   margin-left: 150px;
-  margin-right: 100px;
+  margin-right: 10px;
   box-shadow: 1px 1px 4px black;
   background-color: #ededed;
   border-radius: 5px;
@@ -195,7 +220,7 @@ h5 {
 }
 .border a:hover {
   color: #474747;
-  transform: scale(0.5);
+  background-color: #eaf5e9;
 }
 footer {
   display: flex;
@@ -305,6 +330,15 @@ span {
     font-size: 20px;
     height: auto;
   }
+  .tutorial hr {
+    margin-top: -15px;
+    margin-left: 200px;
+    width: 150px;
+  }
+  .tentang hr {
+    margin-left: 150px;
+    width: 250px;
+  }
   .tentang {
     margin-top: 20px;
     background-color: #f5f5f5;
@@ -406,5 +440,19 @@ span {
     margin-right: 60px;
     padding-top: 50px;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .tutorial hr {
+    margin: 0;
+    margin-left: 150px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  .tentang hr {
+    margin: 0;
+    margin-left: 95px;
+    margin-top: -5px;
   }
 }
