@@ -31,8 +31,8 @@ nav {
   display: flex;
   width: 1280px;
   align-items: center;
-  background-color: #dadcff;
-  box-shadow: 0px 1px 4px black;
+  background-color: white;
+  box-shadow: 0px 1px 10px #e0eaf9;
   z-index: 3;
 }
 
@@ -89,7 +89,9 @@ a {
 }
 .link ul li a:hover {
   color: black;
-  background-color: #dedee3;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #f3f6fb;
   width: 100%;
 }
 
@@ -111,7 +113,7 @@ a {
   padding-top: 80px;
   padding-bottom: 30px;
   color: black;
-  text-shadow: 1px 1px 4px #c4c5d2;
+  background-color: #f3f6fb;
   z-index: 5;
 }
 
@@ -119,7 +121,7 @@ a {
   scroll-margin-top: 55px;
 }
 .judul-tentang {
-  background-color: #dadcff;
+  background-color: white;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -132,7 +134,7 @@ a {
 .deskripsi {
   display: flex;
   align-items: center;
-  background-color: #dadcff;
+  background-color: white;
 }
 
 .judul-tentang hr {
@@ -187,7 +189,7 @@ h5 {
 }
 
 #tutorial {
-  background-color: white;
+  background-color: #f3f6fb;
   color: black;
   font-family: "Poppins";
   padding-top: 1rem;
@@ -203,7 +205,7 @@ h5 {
   width: 400px;
   margin-left: 150px;
   margin-right: 10px;
-  background-color: #dadcff;
+  background-color: white;
   border-radius: 5px;
   padding: 1rem 1rem;
   transition: 1s;
@@ -217,7 +219,7 @@ h5 {
   margin-bottom: 2rem;
   padding: 3px 3px 3px 3px;
   border-radius: 5px;
-  background-color: #b7bbf7;
+  background-color: #f3f6fb;
   text-decoration: none;
   color: black;
   font-family: "Poppins";
@@ -289,7 +291,7 @@ span {
     left: 10px;
     right: 10px;
     top: 10px;
-    background-color: #dadcff;
+    background-color: #d2d2e7;
     border-radius: 10px;
     flex-direction: column;
     align-items: flex-start;
@@ -361,7 +363,7 @@ span {
     width: 200px;
   }
   .judul-tentang {
-    background-color: #dadcff;
+    background-color: #d2d2e7;
   }
   .judul-tentang h5 {
     margin-left: 0;
@@ -371,7 +373,7 @@ span {
   }
   .deskripsi {
     flex-direction: column;
-    background-color: #dadcff;
+    background-color: #d2d2e7;
   }
   .deskripsi img {
     width: 300px;
@@ -401,7 +403,7 @@ span {
 
   .border a {
     margin-top: 1rem;
-    background-color: #b7bbf7;
+    background-color: #d2d2e7;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
   }
