@@ -18,12 +18,18 @@
 body {
   max-width: 1280px;
   margin: auto;
+  background-color: #dadcff;
 }
 
 .home {
   height: auto;
 }
-
+.judul hr {
+  margin-left: 80px;
+  width: 200px;
+  height: 3px;
+  background-color: black;
+}
 nav {
   top: 0;
   margin: 0;
@@ -31,8 +37,8 @@ nav {
   display: flex;
   width: 1280px;
   align-items: center;
-  background-color: #ededed;
-  box-shadow: 0px 0px 2px black;
+  background-color: #dadcff;
+  box-shadow: 0px 0px 4px black;
   padding-left: 100px;
 }
 h4 {
@@ -63,12 +69,12 @@ h5 {
   font-size: 40px;
   font-family: "Oswald";
 }
-hr {
+/* hr {
   margin-left: 80px;
   width: 200px;
   height: 3px;
   background-color: black;
-}
+} */
 #border {
   display: flex;
   margin-top: 2rem;
@@ -77,69 +83,54 @@ hr {
   margin-right: 40px;
 }
 .deskripsi a {
-  padding: 5px 5px;
-  border-radius: 10px;
   text-decoration: none;
   color: black;
-  box-shadow: 1px 1px 2px black;
-  background-color: #dbdbdb;
-  margin-bottom: 20px;
-}
-.deskripsi a:hover {
-  color: white;
-  background-color: #474747;
-  transform: scale(2);
 }
 .deskripsi p {
   margin-bottom: 20px;
 }
 .bagian1 img {
-  margin-left: 70px;
+  left: 0;
+  margin-left: 0;
 }
 .bagian1 {
+  display: flex;
   font-family: "Poppins";
-  box-shadow: 1px 1px 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px 20px 20px 20px;
-  background-color: #ededed;
+  background-color: white;
   align-items: center;
   /* flex-direction: column; */
-  width: 30%;
   margin: 30px 30px 30px 30px;
 }
 .bagian2 {
+  display: flex;
+  margin-top: 30px;
   font-family: "Poppins";
-  box-shadow: 1px 1px 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px 20px 20px 20px;
-  background-color: #ededed;
+  background-color: white;
   align-items: center;
-  flex-direction: column;
-  width: 30%;
   margin: 30px 30px 30px 30px;
 }
-.bagian2 img {
-  margin-left: 70px;
-}
 .bagian3 {
+  display: flex;
   font-family: "Poppins";
-  box-shadow: 1px 1px 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px 20px 20px 20px;
-  background-color: #ededed;
+  background-color: white;
   align-items: center;
-  flex-direction: column;
-  width: 30%;
+  margin-top: 30px;
   margin: 30px 30px 30px 30px;
 }
 .bagian3 img {
   justify-content: center;
-  width: 250px;
-  margin-left: 20px;
+  width: 80px;
 }
 img {
-  height: 150px;
-  width: 150px;
+  margin-right: 40px;
+  height: 70px;
+  width: 70px;
 }
 
 @media screen and (max-width: 560px) {
@@ -163,9 +154,6 @@ img {
     color: black;
     font-family: "Oswald";
   }
-  .garis {
-    width: 320px;
-  }
   h5 {
     margin-left: 0;
     text-align: center;
@@ -173,29 +161,26 @@ img {
   #border {
     flex-direction: column;
   }
+  .judul hr {
+    margin-left: 0;
+  }
+  .judul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .bagian1 {
     width: auto;
   }
   .bagian2 {
     width: auto;
   }
-  .bagian2 img {
-    margin-left: 75px;
-  }
-  .bagian2 p {
-    margin-left: 0;
-  }
   .bagian2 a {
     margin-left: 0;
   }
   .bagian3 {
     width: auto;
-  }
-  .bagian1 img {
-    margin-left: 75px;
-  }
-  .bagian3 img {
-    margin-left: 20px;
   }
 }
 
@@ -225,7 +210,6 @@ img {
     height: 50px;
   }
   .bagian3 img {
-    width: 100px;
-    margin-left: 55px;
+    width: 30px;
   }
 }
