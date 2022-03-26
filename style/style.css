@@ -110,15 +110,16 @@ a {
   flex-direction: column;
   font-family: "Poppins";
   font-size: 30px;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  height: 700px;
+  padding-bottom: 70px;
   color: black;
   background-color: #f3f6fb;
   z-index: 5;
 }
 
 #tentang {
-  scroll-margin-top: 55px;
+  scroll-margin-top: 70px;
 }
 .judul-tentang {
   background-color: white;
@@ -291,7 +292,7 @@ span {
     left: 10px;
     right: 10px;
     top: 10px;
-    background-color: #d2d2e7;
+    background-color: #f3f6fb;
     border-radius: 10px;
     flex-direction: column;
     align-items: flex-start;
@@ -363,7 +364,7 @@ span {
     width: 200px;
   }
   .judul-tentang {
-    background-color: #d2d2e7;
+    background-color: white;
   }
   .judul-tentang h5 {
     margin-left: 0;
@@ -373,7 +374,7 @@ span {
   }
   .deskripsi {
     flex-direction: column;
-    background-color: #d2d2e7;
+    background-color: white;
   }
   .deskripsi img {
     width: 300px;
@@ -403,7 +404,7 @@ span {
 
   .border a {
     margin-top: 1rem;
-    background-color: #d2d2e7;
+    background-color: #f3f6fb;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
   }
