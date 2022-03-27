@@ -32,7 +32,7 @@ nav {
   width: 1280px;
   align-items: center;
   background-color: white;
-  box-shadow: 0px 1px 10px #e0eaf9;
+  box-shadow: 0px 1px 10px rgb(187, 187, 212);
   z-index: 3;
 }
 
@@ -210,6 +210,7 @@ h5 {
   border-radius: 5px;
   padding: 1rem 1rem;
   transition: 1s;
+  box-shadow: 1px 1px 10px rgb(187, 187, 212);
 }
 
 #tutorial h6 {
@@ -224,6 +225,7 @@ h5 {
   text-decoration: none;
   color: black;
   font-family: "Poppins";
+  box-shadow: 1px 1px 8px rgb(187, 187, 212);
 }
 .border a:hover {
   color: #474747;
@@ -292,11 +294,11 @@ span {
     left: 10px;
     right: 10px;
     top: 10px;
-    background-color: #f3f6fb;
+    background-color: white;
     border-radius: 10px;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px rgb(187, 187, 212);
   }
   h4 {
     padding-top: 12px;
@@ -417,6 +419,7 @@ span {
     margin-top: 30px;
     width: auto;
     margin-right: 60px;
+    box-shadow: 1px 1px 4px rgb(187, 187, 212);
   }
   .konten {
     flex-direction: column;
